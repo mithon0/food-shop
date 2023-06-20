@@ -1,11 +1,14 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import Tilt from 'react-parallax-tilt';
+
 const VerticleTimeline = () => {
     return (
         <div>
             <VerticalTimeline>
-  <VerticalTimelineElement
+ <Tilt>
+ <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
@@ -19,6 +22,7 @@ const VerticleTimeline = () => {
       Creative Direction, User Experience, Visual Design, Project Management, Team Leading
     </p>
   </VerticalTimelineElement>
+ </Tilt>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2010 - 2011"
@@ -31,18 +35,7 @@ const VerticleTimeline = () => {
       Creative Direction, User Experience, Visual Design, SEO, Online Marketing
     </p>
   </VerticalTimelineElement>
-  <VerticalTimelineElement
-    className="vertical-timeline-element--work"
-    date="2008 - 2010"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
-  >
-    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-    <p>
-      User Experience, Visual Design
-    </p>
-  </VerticalTimelineElement>
+  
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2006 - 2008"

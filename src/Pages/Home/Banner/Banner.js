@@ -1,9 +1,12 @@
 import React from 'react';
 import banner from '../../../images/banner.jpg';
 import { TypeAnimation } from 'react-type-animation';
+import TypingText from 'react-text-typing-animation'
 import CountUp from 'react-countup';
+import './Banner.css';
 
 const Banner = () => {
+    const title =" Our fresh produce  <br /> is sourced every morning,  you get the best from us."
     return (
         <div className='relative '>
                 <div className='text-center'>
@@ -30,12 +33,12 @@ const Banner = () => {
            />
                 </div>
                 <div className='absolute md:block hidden   top-[100px]'>
-                    <h1 className='text-7xl '>WellCome <br /> to <br />  <CountUp className='text-red-600'
+                    <h1 className='text-7xl f'> wellcome <br /> to <br />  <CountUp className='text-red-600'
               end={45}
               duration={10}
             ></CountUp><span className='text-white'>Food</span> shop</h1>
-                    <h3 className='text-5xl mt-[100px]   text-center mx-52 text-white'>
-                    Our fresh produce  <br /> is sourced every morning,  you get the best from us.
+                    <h3 className='text-5xl mt-[80px] d  text-center mx-52 text-white'>
+                    <TypingText text={title} />
                     </h3>
                 </div>
         </div>
